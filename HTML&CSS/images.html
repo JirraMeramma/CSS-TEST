@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    max-width: 400px; 
+    width: 100%; 
+}
+
+.gallery img {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="c:\Users\Praveen\Downloads\image1.png" alt="Photo 1">
+        <img src="c:\Users\Praveen\Downloads\images2.png" alt="Photo 2">
+        <img src="c:\Users\Praveen\Downloads\images3.png" alt="Photo 3">
+        <img src="c:\Users\Praveen\Downloads\image4.png" alt="Photo 4">
+    </div>
+</body>
+</html>
